@@ -16,7 +16,7 @@ void jack_bauer(void)
 	{
 	for (d = 0; d <= 9; d++)
 	{
-	for ((a <= 1 && d <= 9) || (a <= 2 && d <= 3))
+	if ((a <= 1 && d <= 9) || (a <= 2 && d <= 3))
 	{
 	for (c = 0; c <= 5; c++)
 	{
