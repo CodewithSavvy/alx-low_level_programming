@@ -8,10 +8,9 @@
 
 int print_last_digit(int num)
 {
-	int num = 98;
 	int last;
 
-	last = number % 10;
+	last = num % 10;
 
 	putchar(last);
 	return (last);
