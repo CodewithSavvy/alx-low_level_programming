@@ -30,8 +30,8 @@ void times_table(void)
 	_putchar(32);
 	_putchar(32);
 	}
-	putchar(z + '0');
+	_putchar(z + '0');
 	}
 	}
-	putchar('\n');
+	_putchar('\n');
 }
