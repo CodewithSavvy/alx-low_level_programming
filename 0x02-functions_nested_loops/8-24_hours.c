@@ -16,9 +16,9 @@ void jack_bauer(void)
 	{
 	for (d = 0; d <= 9; d++)
 	{
-	for ((a <= 1 && d < 9) || (a <= 2 && d <= 3))
+	for ((a <= 1 && d <= 9) || (a <= 2 && d <= 3))
 	{
-	for (c = 0; c <= 5; C++)
+	for (c = 0; c <= 5; c++)
 	{
 	for (d = 0; d <= 9; d++)
 	_putchar(a + '0');
