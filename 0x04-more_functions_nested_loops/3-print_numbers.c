@@ -8,7 +8,7 @@
 
 void print_numbers(void)
 {
-	int digit = 0;
+	char digit = 0;
 
 	while
 		(digit < 10) {
