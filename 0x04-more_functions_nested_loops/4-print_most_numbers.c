@@ -15,5 +15,4 @@ void print_most_numbers(void)
 			putchar(c);
 	}
 	putchar('\n');
-	return (0);
 }

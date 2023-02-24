@@ -8,14 +8,10 @@
 
 void print_numbers(void)
 {
-	char digit = 0;
+	char c;
 
-	while
-		(digit < 10) {
-			_putchar(digit);
-			digit++;
-	}
-	_putcar('\n');
-	return (0);
+	for (c = 0; c <= 9; c++)
+		_putchar(c);
 
+	_putchar('\n');
 }
