@@ -26,10 +26,13 @@ else if (u % 5 == 0 && u % 3 == 0)
 }
 else if (u == 1)
 {
-	printf(" %d", u)
-}
-else
 	printf(" %d", u);
 }
-printf("\n");
+else
+{
+	printf(" %d", u);
+}
+	printf("\n");
+}
+return (0);
 }
