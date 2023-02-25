@@ -8,31 +8,32 @@
 
 int main(void)
 {
-int u;
-
-for (u = 1; u <= 100; u++)
-{
-if (u % 3 == 0 && u % 5 != 0)
-{
-	printf(" Fizz");
-}
-else if (u % 5 == 0 && u % 3 != 0)
-{
-	printf(" Buzz");
-}
-else if (u % 5 == 0 && u % 3 == 0)
-{
-	printf(" FizzBuzz");
-}
-else if (u == 1)
-{
-	printf("%d", u);
-}
-else
-{
-	printf(" %d", u);
-}
+	int i;
+	
+	for (i = 1; i <= 100; i++)
+	{
+		if (i % 3 == 0 && i % 5 != 0)
+		{
+			printf(" Fizz");
+		}
+		else if (i % 5 == 0 && i % 3 != 0)
+		{
+			printf(" Buzz");
+		}
+		else if (i % 3 == 0 && i % 5 == 0)
+		{
+			printf(" FizzBuzz");
+		}
+		else if (i == 1)
+		{
+			printf("%d", i);
+		}
+		else
+		{
+			printf(" %d", i);
+		}
+	}
 	printf("\n");
-}
-return (0);
+	
+	return (0);
 }
