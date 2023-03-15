@@ -22,17 +22,13 @@ s2 = "";
 i = ci = 0;
 while (s1[i] != '\0')
 i++;
-
 while (s2[ci] != '\0')
 ci++;
-
 /*setting the conct pointer to allocate a block of memmory for s1 and s2*/
 conct = malloc(sizeof(char) * (i + ci + 1));
-
 /*if no memmory is allocated then the program should stop*/
 if (conct == NULL)
 return (NULL);
-
 /*Asigning the strings characters to fill the memmory allocation */
 i = ci = 0;
 while (s1[i] != '\0')
@@ -40,7 +36,6 @@ while (s1[i] != '\0')
 conct[i] = s1[i];
 i++;
 }
-
 while (s2[ci] != '\0')
 {
 conct[i] = s2[ci];
@@ -48,7 +43,6 @@ i++, ci++;
 }
 /*Asigning the pointer to the end of both strings*/
 conct[i] = '\0';
-
 /*the program is returning a pointer as sucess*/
 return (conct);
 }
