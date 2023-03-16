@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * malloc_chack - allocate a block of memmory for an array
+ * malloc_checked - allocate a block of memmory for an array
  * @b: number of bytes to be allocated
  *
  * Return: 98 for a normal termination
