@@ -17,8 +17,6 @@ va_list list;
 
 
 va_start(list, format);
-
-
 if (format)
 {
 while (format[i])
@@ -48,8 +46,6 @@ sep = ", ";
 i++;
 }
 }
-
-
 printf("\n");
 va_end(list);
 }
