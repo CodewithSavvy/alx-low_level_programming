@@ -20,7 +20,7 @@ int append_text_to_file(const char *filename, char *text_content)
 			lenght++;
 	}
 	loop = open(filename, O_WRONLY | O_APPEND);
-	k = write(loop, text_content, loop);
+	k = write(loop, text_content, lenght);
 	/**checking if loop == signed in */
 
 	if (loop == -1 || k == -1)
