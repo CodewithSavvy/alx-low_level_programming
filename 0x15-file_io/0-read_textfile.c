@@ -1,30 +1,38 @@
 #include "main.h"
-#include <stdlib>
 
 /**
- * * read_textfile- Read text file print to STDOUT.
- * * @filename: text file being read
- * * @letters: number of letters to be read
- * * Return: w- actual number of bytes read and printed
- * * 0 when function fails or filename is NULL.
+ *  *read_textfile - function that reads a text file and prints output
+ *  *@filename: pointer to file name
+ *  *@letters: the letters in the file to be read
+ *  *Return: actual number of letters the file  reads and prints
  */
+
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	char *buffer;
-	ssize_t fptr, k, i;
+	char *get;
+	ssize_t bring;
+	int begin, pick;
 
-	/***opening the file ***/
-	fptr = open(filename, O_RDONLY);
-
-	/**checking if fptr is signed number*/
-	if (fptr == -1)
+	if (filename == NULL)
 		return (0);
 
-	/*Asigning space for malloc*/
-	buffer = malloc(sizeof(char) * letters);
-	i = read(fptr, buffer, letters);
-	k = write(STDOUT_FILENO, buffer, i);
-	free(buffer);
-	close(fptr);
-	return (k);
+	get = malloc(sizeof(char) * letters);
+	/*checking if get is pointing to nothing*/
+	if (get == NULL)
+		return (0);
+
+	begin = open(filename, O_RDONLY);
+	pick = read(begin, get, letters);
+	bring = write(STDOUT_FILENO, get, pick);
+
+	if (begin == -1 || pick == -1 || bring == -1 || bring != pick)
+	{
+		free(get);
+		return (0);
+	}
+
+	free(get);
+	close(begin);
+
+	return (bring);
 }
